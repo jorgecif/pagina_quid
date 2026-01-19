@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quid Lab Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <nav class="nav">
+        <div class="logo">Quid Lab Co.</div>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#trabajo">Trabajo</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <p class="tag">Agencia creativa · Diseño y estrategia</p>
+        <h1>Diseñamos marcas memorables y experiencias digitales que conectan.</h1>
+        <p class="hero-description">
+          Ayudamos a negocios emergentes a construir identidad, posicionamiento y
+          presencia digital con un enfoque estratégico.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contacto">Hablemos</a>
+          <a class="btn ghost" href="#trabajo">Ver proyectos</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="nosotros">
+        <div class="section-heading">
+          <p class="eyebrow">Sobre nosotros</p>
+          <h2>Creatividad con estrategia para impulsar tu negocio.</h2>
+          <p>
+            En Quid Lab Co. acompañamos a marcas que quieren crecer con una
+            comunicación clara y coherente. Construimos conceptos, diseñamos
+            identidades y llevamos tu mensaje a los canales correctos.
+          </p>
+        </div>
+        <div class="stats">
+          <div class="stat-card">
+            <h3>+8</h3>
+            <p>Años impulsando marcas en Latinoamérica.</p>
+          </div>
+          <div class="stat-card">
+            <h3>360°</h3>
+            <p>Estrategia, diseño, contenido y marketing.</p>
+          </div>
+          <div class="stat-card">
+            <h3>100%</h3>
+            <p>Atención personalizada con equipos a medida.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="servicios">
+        <div class="section-heading">
+          <p class="eyebrow">Servicios</p>
+          <h2>Soluciones integrales para marcas con ambición.</h2>
+        </div>
+        <div class="cards">
+          <article class="service-card">
+            <h3>Identidad visual</h3>
+            <p>
+              Naming, branding y sistemas visuales coherentes para construir
+              confianza y recordación.
+            </p>
+          </article>
+          <article class="service-card">
+            <h3>Diseño web</h3>
+            <p>
+              Sitios responsivos y optimizados para convertir visitas en
+              oportunidades de negocio.
+            </p>
+          </article>
+          <article class="service-card">
+            <h3>Contenido &amp; social media</h3>
+            <p>
+              Narrativas, sesiones de contenido y gestión para conectar con tu
+              audiencia.
+            </p>
+          </article>
+          <article class="service-card">
+            <h3>Marketing digital</h3>
+            <p>
+              Estrategias de pauta, embudos y campañas enfocadas en resultados.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="trabajo">
+        <div class="section-heading">
+          <p class="eyebrow">Trabajo reciente</p>
+          <h2>Proyectos que reflejan nuestro ADN creativo.</h2>
+        </div>
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="work-image">Aura Coffee</div>
+            <div class="work-info">
+              <h3>Aura Coffee</h3>
+              <p>Branding, packaging y e-commerce.</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-image">Casa Luz</div>
+            <div class="work-info">
+              <h3>Casa Luz</h3>
+              <p>Identidad visual y contenido digital.</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-image">Senda Studio</div>
+            <div class="work-info">
+              <h3>Senda Studio</h3>
+              <p>UX/UI para plataforma educativa.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt" id="contacto">
+        <div class="section-heading">
+          <p class="eyebrow">Contacto</p>
+          <h2>¿Listos para llevar tu marca al siguiente nivel?</h2>
+          <p>Escríbenos y armamos un plan hecho a la medida de tu negocio.</p>
+        </div>
+        <div class="contact">
+          <div>
+            <h3>Hola@quidlab.co</h3>
+            <p>Ciudad de México · Trabajo remoto en LATAM</p>
+          </div>
+          <a class="btn primary" href="mailto:hola@quidlab.co">Agendar sesión</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2024 Quid Lab Co. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const links = document.querySelector(".nav-links");
+
+      toggle.addEventListener("click", () => {
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!expanded));
+        links.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
